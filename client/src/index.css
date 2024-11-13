@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.service-card-expanded {
+  animation: expandCard 0.3s ease-out;
+}
+
+@keyframes expandCard {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-padding-top: 80px; /* Matches the header offset */
+}
